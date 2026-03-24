@@ -1,0 +1,332 @@
+---
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/seal.png" />
+    <meta name="viewport" content="width=device-width" />
+    <title>engineering — grissobel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet" />
+    <script is:inline src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #fff;
+        font-family: 'Cormorant Garamond', serif;
+        color: #2a2d3a;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header {
+        width: 90%;
+        max-width: 600px;
+        padding: 2rem 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      a.seal-home {
+        display: inline-block;
+      }
+
+      a.seal-home img {
+        width: 100px;
+        opacity: 0.85;
+      }
+
+      a.seal-home img:hover {
+        opacity: 1;
+      }
+
+      .back {
+        font-size: 0.9rem;
+        letter-spacing: 0.15em;
+        opacity: 0.5;
+        text-decoration: none;
+        color: #2a2d3a;
+        align-self: flex-start;
+      }
+
+      .back:hover {
+        opacity: 1;
+      }
+
+      .header-rule {
+        width: 100%;
+        border: none;
+        border-top: 1px solid #c8cad4;
+      }
+
+      main {
+        width: 90%;
+        max-width: 600px;
+        padding: 3rem 0 4rem 0;
+        flex: 1;
+      }
+
+      h1 {
+        font-size: 2.6rem;
+        font-weight: 300;
+        letter-spacing: 0.4em;
+        margin-bottom: 3rem;
+      }
+
+      h2 {
+        font-size: 0.85rem;
+        letter-spacing: 0.3em;
+        font-weight: 400;
+        text-transform: lowercase;
+        margin-bottom: 1.25rem;
+        opacity: 0.5;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #c8cad4;
+        margin: 2.5rem 0;
+      }
+
+      .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .card {
+        border: 1px solid #c8cad4;
+        padding: 1.25rem 1.5rem;
+      }
+
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+      }
+
+      .card-header a {
+        color: #2a2d3a;
+        font-size: 1.2rem;
+        text-decoration: none;
+        opacity: 0.5;
+      }
+
+      .card-header a:hover {
+        opacity: 1;
+      }
+
+      .card p {
+        font-size: 1rem;
+        line-height: 1.6;
+        opacity: 0.7;
+        margin-bottom: 0.75rem;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        list-style: none;
+        margin-top: 0.75rem;
+      }
+
+      .tags li {
+        font-size: 0.75rem;
+        letter-spacing: 0.1em;
+        border: 1px solid #c8cad4;
+        padding: 0.2rem 0.6rem;
+        color: #2a2d3a;
+        opacity: 0.7;
+      }
+
+      .timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 0.25rem;
+      }
+
+      .date {
+        font-size: 0.85rem;
+        letter-spacing: 0.1em;
+        opacity: 0.5;
+      }
+
+      .company {
+        font-size: 0.9rem;
+        letter-spacing: 0.1em;
+        opacity: 0.5;
+        margin-bottom: 0.5rem;
+      }
+
+      .job p:last-child {
+        font-size: 1rem;
+        line-height: 1.6;
+        opacity: 0.7;
+      }
+
+      footer {
+        width: 90%;
+        max-width: 600px;
+        padding: 2rem 0;
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+        color: #2a2d3a;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #c8cad4;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      .icons {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .icons a {
+        text-decoration: none;
+        color: #2a2d3a;
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        opacity: 0.6;
+      }
+
+      .icons a:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="/" class="back">← grissobel</a>
+      <a href="/" class="seal-home">
+        <img src="/seal.png" alt="grissobel" />
+      </a>
+      <hr class="header-rule" />
+    </header>
+
+    <main>
+      <h1>engineering</h1>
+
+      <section>
+        <h2>projects</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="card-header">
+              <h3>Project One</h3>
+              <a href="https://github.com/grissobel" target="_blank" aria-label="github">
+                <span class="iconify" data-icon="mdi:github"></span>
+              </a>
+            </div>
+            <p>A short description of what this project does and why it exists.</p>
+            <ul class="tags">
+              <li>JavaScript</li>
+              <li>React</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h3>Project Two</h3>
+              <a href="https://github.com/grissobel" target="_blank" aria-label="github">
+                <span class="iconify" data-icon="mdi:github"></span>
+              </a>
+            </div>
+            <p>A short description of what this project does and why it exists.</p>
+            <ul class="tags">
+              <li>Python</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h3>Project Three</h3>
+              <a href="https://github.com/grissobel" target="_blank" aria-label="github">
+                <span class="iconify" data-icon="mdi:github"></span>
+              </a>
+            </div>
+            <p>A short description of what this project does and why it exists.</p>
+            <ul class="tags">
+              <li>Systems Design</li>
+              <li>Astro</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>experience</h2>
+        <div class="timeline">
+          <div class="job">
+            <div class="job-header">
+              <h3>Job Title</h3>
+              <span class="date">2020 — present</span>
+            </div>
+            <p class="company">Company Name</p>
+            <p>Brief description of your role and what you worked on.</p>
+          </div>
+          <div class="job">
+            <div class="job-header">
+              <h3>Job Title</h3>
+              <span class="date">2017 — 2020</span>
+            </div>
+            <p class="company">Company Name</p>
+            <p>Brief description of your role and what you worked on.</p>
+          </div>
+          <div class="job">
+            <div class="job-header">
+              <h3>Job Title</h3>
+              <span class="date">2014 — 2017</span>
+            </div>
+            <p class="company">Company Name</p>
+            <p>Brief description of your role and what you worked on.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 grissobel</p>
+      <div class="icons">
+        <a href="/search" aria-label="search"><span class="iconify" data-icon="mdi:magnify"></span></a>
+        <a href="https://grissobel.substack.com" target="_blank" aria-label="substack"><span class="iconify" data-icon="simple-icons:substack"></span></a>
+        <a href="https://instagram.com" target="_blank" aria-label="instagram"><span class="iconify" data-icon="mdi:instagram"></span></a>
+        <a href="https://github.com/grissobel" target="_blank" aria-label="github"><span class="iconify" data-icon="mdi:github"></span></a>
+        <a href="https://goodreads.com" target="_blank" aria-label="goodreads"><span class="iconify" data-icon="simple-icons:goodreads"></span></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="linkedin"><span class="iconify" data-icon="mdi:linkedin"></span></a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+---
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/seal.png" />
+    <meta name="viewport" content="width=device-width" />
+    <title>about — grissobel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet" />
+    <script is:inline src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #fff;
+        font-family: 'Cormorant Garamond', serif;
+        color: #2a2d3a;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header {
+        width: 90%;
+        max-width: 600px;
+        padding: 2rem 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      a.seal-home {
+        display: inline-block;
+      }
+
+      a.seal-home img {
+        width: 100px;
+        opacity: 0.85;
+      }
+
+      a.seal-home img:hover {
+        opacity: 1;
+      }
+
+      .back {
+        font-size: 0.9rem;
+        letter-spacing: 0.15em;
+        opacity: 0.5;
+        text-decoration: none;
+        color: #2a2d3a;
+        align-self: flex-start;
+      }
+
+      .back:hover {
+        opacity: 1;
+      }
+
+      .header-rule {
+        width: 100%;
+        border: none;
+        border-top: 1px solid #c8cad4;
+      }
+
+      main {
+        width: 90%;
+        max-width: 600px;
+        padding: 3rem 0 4rem 0;
+        flex: 1;
+      }
+
+      h1 {
+        font-size: 2.6rem;
+        font-weight: 300;
+        letter-spacing: 0.4em;
+        margin-bottom: 3rem;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #c8cad4;
+        margin: 2.5rem 0;
+      }
+
+      .photo-block {
+        display: flex;
+        gap: 2.5rem;
+        align-items: flex-start;
+      }
+
+      .avatar {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 50%;
+        flex-shrink: 0;
+        filter: grayscale(20%);
+        opacity: 1;
+      }
+
+      .bio {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .bio p {
+        font-size: 1.1rem;
+        line-height: 1.75;
+        opacity: 0.85;
+      }
+
+      .inline-link {
+        color: #2a2d3a;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        opacity: 0.7;
+      }
+
+      .inline-link:hover {
+        opacity: 1;
+      }
+
+      footer {
+        width: 90%;
+        max-width: 600px;
+        padding: 2rem 0;
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+        color: #2a2d3a;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #c8cad4;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      .icons {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .icons a {
+        text-decoration: none;
+        color: #2a2d3a;
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        opacity: 0.6;
+      }
+
+      .icons a:hover {
+        opacity: 1;
+      }
+
+      @media (max-width: 500px) {
+        .photo-block {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="/" class="back">← grissobel</a>
+      <a href="/" class="seal-home">
+        <img src="/seal.png" alt="grissobel" />
+      </a>
+      <hr class="header-rule" />
+    </header>
+
+    <main>
+      <h1>about</h1>
+
+      <section>
+        <div class="photo-block">
+          <img src="/about_avatar.JPG" alt="gris" class="avatar" />
+          <div class="bio">
+            <p>Hi, I'm Gris. I'm a writer, engineer, and mother. I build software and hardware, write essays about what I'm learning, and maintain a few projects I'm passionate about.</p>
+            <p>As both a software and electrical engineer, I combine my knowledge of both disciplines to make fun things or solve everyday problems — my way.</p>
+            <p>My writing lives on Substack in <em>grey matters</em>, where I publish weekly essays and occasional curations of children's books (<em>tiny stacks</em>) about motherhood, cooking, books, fly fishing, and whatever else has been on my mind.</p>
+            <p>This site routes you to my work. Substack takes you to my essays. Engineering shows my software and hardware work.</p>
+            <p>You can reach me via <a href="mailto:hello@grissobel.com" class="inline-link">email</a>, or find me on <a href="https://grissobel.substack.com" target="_blank" class="inline-link">Substack</a>, <a href="https://github.com/grissobel" target="_blank" class="inline-link">GitHub</a>, <a href="https://instagram.com" target="_blank" class="inline-link">Instagram</a>, <a href="https://goodreads.com" target="_blank" class="inline-link">Goodreads</a>, and <a href="https://linkedin.com" target="_blank" class="inline-link">LinkedIn</a>.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 grissobel</p>
+      <div class="icons">
+        <a href="/search" aria-label="search"><span class="iconify" data-icon="mdi:magnify"></span></a>
+        <a href="https://grissobel.substack.com" target="_blank" aria-label="substack"><span class="iconify" data-icon="simple-icons:substack"></span></a>
+        <a href="https://instagram.com" target="_blank" aria-label="instagram"><span class="iconify" data-icon="mdi:instagram"></span></a>
+        <a href="https://github.com/grissobel" target="_blank" aria-label="github"><span class="iconify" data-icon="mdi:github"></span></a>
+        <a href="https://goodreads.com" target="_blank" aria-label="goodreads"><span class="iconify" data-icon="simple-icons:goodreads"></span></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="linkedin"><span class="iconify" data-icon="mdi:linkedin"></span></a>
+      </div>
+    </footer>
+  </body>
+</html>
